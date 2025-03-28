@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Parallel Test Suite" parallel="methods" thread-count="4">
+    <listeners>
+        <listener class-name="com.mailauto.TestListener"/>
+    </listeners>
+    <test name="Regression Testing">
+        <classes>
+            <class name="com.mailauto.MailinatorTests"/>
+        </classes>
+    </test>
+</suite>
